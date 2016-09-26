@@ -14,21 +14,25 @@ export default class GradesTable extends Component{
     {
       return percent ="A";
     }
-    else if (percent <= 0.9 && percent >= 0.8  )
+    else if (percent < 0.9 && percent >= 0.8  )
     {
       return percent ="B";
     }
-    else if (percent <= 0.8 && percent >= 0.7  )
+    else if (percent < 0.8 && percent >= 0.7  )
     {
       return percent ="C";
     }
-    else if (percent <= 0.7 && percent >= 0.6  )
+    else if (percent < 0.7 && percent >= 0.6  )
     {
       return percent ="D";
     }
-    else
+    else if (percent < 0.6 )
     {
       return percent ="F";
+    }
+    else
+    {
+      return percent ="";
     }
   }
   render(){
