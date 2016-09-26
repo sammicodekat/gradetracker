@@ -28,7 +28,7 @@ export default class GradesContainer extends Component {
   render(){
     const {assignments} = this.state;
     return(
-    <GradesTable assignments = {assignments} />
+      <GradesTable assignments = {assignments} />
     )
   }
 }
