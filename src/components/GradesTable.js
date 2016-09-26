@@ -36,9 +36,9 @@ export default class GradesTable extends Component{
     let totalscore = 0;
     let sum = 0;
     return (
-      <table className='table'>
+      <table className='table table-hover'>
       <thead>
-      <tr>
+      <tr className ="info">
       <th>Assignment</th>
       <th>Total</th>
       <th>Score</th>
@@ -59,14 +59,14 @@ export default class GradesTable extends Component{
           <td>{grade}</td>
           <td>{this._percent(percent)}</td>
           <td>
-          <button onClick ={this._delete.bind(this,assignment)}>Delete</button>
+          <button onClick ={this._delete.bind(this,assignment)} className="btn btn-danger">Delete</button>
           </td>
           </tr>
         )
       })}
       </tbody>
       <tfoot>
-      <tr>
+      <tr className = "danger">
       <td>Sum :</td>
       <td>{totalscore}</td>
       <td>{sum}</td>

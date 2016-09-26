@@ -37,7 +37,7 @@ export default class GradesForm extends Component {
       <label htmlFor="newGrade">Grade:</label>
       <input ref='newGrade' type="number" className='form-control' id = 'newGrade' required/>
       </div>
-      <button className="btn btn-default"> Add Assignment </button>
+      <button className="btn btn-primary"> Add Assignment </button>
       </form>
     )
   }
